@@ -66,7 +66,7 @@ def has_prefix(sub_s, dictionary):
 
 
 def check_validity(row):
-	if len(row.replace(' ', '')) != 4:
+	if len(row.replace(' ', '')) != 4 or not row.replace(' ', '').isalpha():
 		print("Illegal input")
 		exit(0)
 	if row[1] != " " or row[3] != " " or row[5] != " ":
