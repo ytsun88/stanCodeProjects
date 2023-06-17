@@ -95,8 +95,7 @@ def solve(images):
     width = images[0].width
     height = images[0].height
     result = SimpleImage.blank(width, height)
-    
-    # ----- YOUR CODE STARTS HERE ----- #
+
     # Write code to populate image and create the 'ghost' effect
     for x in range(result.width):
         for y in range(result.height):
@@ -107,8 +106,6 @@ def solve(images):
             new_pixel.red = get_best_pixel(old_pixels).red
             new_pixel.green = get_best_pixel(old_pixels).green
             new_pixel.blue = get_best_pixel(old_pixels).blue
-
-    # ----- YOUR CODE ENDS HERE ----- #
 
     print("Displaying image!")
     result.show()
